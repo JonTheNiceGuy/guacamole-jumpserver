@@ -5,7 +5,7 @@
 - name: "Login details"
   debug: 
     msg:
-      - "Your Guacamole Jump Server is now live at https://{{ ipify_public_ip }}:8443/"
+      - "Your Guacamole Jump Server is now live at https://{{ ipify_public_ip }}:8443/ | https://{{ dns_name }}:8443"
       - "Access with the following details"
       - "Username: {{ guacamole_web.admin_username }}"
       - "Password: {{ guacamole_web.admin_password }}"
@@ -22,7 +22,7 @@
 
         - Public IP address: {{ ipify_public_ip }}
 
-        - Access via: https://{{ ipify_public_ip }}:8443/
+        - Access via: https://{{ ipify_public_ip }}:8443/ or https://{{ dns_name }}:8443
 
         Username: {{ guacamole_web.admin_username }}
         Password: {{ guacamole_web.admin_password }}
